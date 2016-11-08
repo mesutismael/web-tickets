@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="general_primary">#181c1b</color>
+    <color name="general_primary_dark">#0f1211</color>
+    <color name="general_accent">#ff513d</color>
+    <color name="general_error">#ff513d</color>
+    <color name="general_success">#2bdd72</color>
+    <color name="general_divider">#1F222222</color>
+    <color name="general_text">#DE222222</color>
+    <color name="general_text_light">#8A222222</color>
+    <color name="general_text_white">#FFF</color>
+    <color name="general_text_error">@color/general_error</color>
+    <color name="general_button_background">@color/general_accent</color>
+    <color name="general_button_background_pressed">#cf211d</color>
+    <color name="general_button_inline_background">#FFF</color>
+    <color name="general_button_inline_background_pressed">#66ff513d</color>
+    <color name="general_button_inline_text">@color/general_accent</color>
+
+    <color name="login_background_start">#FF383D</color>
+    <color name="login_background_end">@color/general_accent</color>
+
+    <color name="scan_success">@color/general_success</color>
+    <color name="scan_failure">#f03722</color>
+    <color name="scan_feedback_text">#FFF</color>
+
+</resources>

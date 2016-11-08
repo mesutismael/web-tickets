@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/general_content_padding"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/imageView_event"
+        android:layout_width="@dimen/event_list_image_width"
+        android:layout_height="@dimen/event_list_image_height"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="@dimen/general_content_padding"/>
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView_event"
+        android:layout_marginBottom="@dimen/general_text_spacing"
+        tools:text="Mumford &amp; Sons"/>
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView_event"
+        android:layout_below="@id/textView_name"
+        tools:text="30 maart 2016 20:00"
+        style="@style/Webtickets.TextView.Light"/>
+
+</RelativeLayout>

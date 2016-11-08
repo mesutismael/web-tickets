@@ -1,0 +1,78 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="be.appreciate.webtickets">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- Used by the ZXingScannerView in the ScanFragment -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ba67cbed750a110eed370235de5aae56f0c632ed" />
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name=".activities.EventDetailActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.ScanActivity"
+            android:label="@string/scan_title"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".activities.EventDetailActivity"/>
+
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/settings_title"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <provider
+            android:name=".contentproviders.EventContentProvider"
+            android:authorities="be.appreciate.webtickets.contentproviders.EventContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.TicketContentProvider"
+            android:authorities="be.appreciate.webtickets.contentproviders.TicketContentProvider"
+            android:exported="false"/>
+
+        <provider
+            android:name=".contentproviders.ScannedTicketContentProvider"
+            android:authorities="be.appreciate.webtickets.contentproviders.ScannedTicketContentProvider"
+            android:exported="false"/>
+
+        <service
+            android:name=".services.UploadService"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

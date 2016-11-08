@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView_event"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/event_detail_image_height"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/general_content_padding">
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/general_text_spacing"
+            tools:text="Mumford &amp; Sons"
+            style="@style/Webtickets.TextView.Title"/>
+
+        <TextView
+            android:id="@+id/textView_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_name"
+            android:layout_marginBottom="@dimen/general_text_spacing"
+            tools:text="30 maart 2016 20:00"/>
+
+        <TextView
+            android:id="@+id/textView_scanCountTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/general_text_spacing"
+            android:layout_marginTop="@dimen/general_text_spacing_extra"
+            android:layout_below="@id/textView_date"
+            android:text="@string/event_scan_count_title"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView_scanCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_scanCountTitle"
+            tools:text="18 out of 84 tickets scanned."/>
+
+        <Button
+            android:id="@+id/button_startScan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/event_start_scan"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

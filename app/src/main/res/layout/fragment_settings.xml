@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/general_content_padding">
+
+    <TextView
+        android:id="@+id/textView_syncTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/general_text_spacing"
+        android:text="@string/settings_sync_title"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/general_text_spacing"
+        android:layout_below="@id/textView_syncTitle"
+        tools:text="Number of tickets that have been scanned offline: 10"/>
+
+    <Button
+        android:id="@+id/button_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_sync"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/general_text_spacing"
+        android:text="@string/settings_sync_action"/>
+
+    <TextView
+        android:id="@+id/textView_durationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/general_text_spacing"
+        android:layout_marginTop="@dimen/general_text_spacing_extra"
+        android:layout_below="@id/button_sync"
+        android:text="@string/settings_success_duration_title"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/general_text_spacing"
+        android:text="@string/settings_success_duration"
+        android:layout_below="@id/textView_durationTitle"/>
+
+    <EditText
+        android:id="@+id/editText_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_duration"
+        android:hint="@string/settings_success_duration_hint"
+        android:inputType="number"
+        android:layout_marginBottom="@dimen/general_text_spacing"/>
+
+    <Button
+        android:id="@+id/button_saveDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_duration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/general_text_spacing"
+        android:text="@string/settings_success_duration_save"/>
+
+    <Button
+        android:id="@+id/button_logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/settings_log_out"/>
+
+</RelativeLayout>

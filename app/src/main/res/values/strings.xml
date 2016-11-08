@@ -1,0 +1,51 @@
+<resources>
+
+    <string name="app_name">Webtickets</string>
+
+    <string name="dialog_error">Error</string>
+    <string name="dialog_positive">OK</string>
+    <string name="dialog_negative">Cancel</string>
+
+    <string name="login_hint">Code</string>
+    <string name="login_action">Log in</string>
+    <string name="login_register">Create an account</string>
+    <string name="login_incomplete_error">Enter your login code.</string>
+    <string name="login_login_error">Unable to log in.</string>
+    <string name="login_progress">Logging in&#8230;</string>
+
+    <string name="main_action_settings">Settings</string>
+
+    <string name="events_offline">You are offline</string>
+    <string name="events_last_sync">Last synchronised at %1$s</string>
+    <string name="events_empty">No events</string>
+
+    <string name="event_start_scan">Start scan</string>
+    <string name="event_permission_declined_title">Camera</string>
+    <string name="event_permission_declined_message">Permission to use your camera is required. Turn it on the settings.</string>
+    <string name="event_permission_declined_positive">Settings</string>
+    <string name="event_scan_count">%1$d out of %2$d tickets scanned (%3$d offline).</string>
+    <string name="event_scan_count_all">All tickets scanned (%1$d offline).</string>
+    <string name="event_scan_count_title">Scanned tickets</string>
+
+    <string name="scan_title">Scan</string>
+    <string name="scan_offline">You are offline</string>
+    <string name="scan_start">Resume scanning</string>
+    <string name="scan_success">Scan succeeded</string>
+    <string name="scan_failure">Scan failed</string>
+    <string name="scan_error_offline_not_found">Doesn\'t exist.</string>
+    <string name="scan_error_offline_scanned">Ticket already used.</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_sync_message">Number of tickets that have been scanned offline but not sent to the server: %1$d</string>
+    <string name="settings_sync_action">Send to server</string>
+    <string name="settings_sync_progress">Sending to the server&#8230;</string>
+    <string name="settings_sync_success">The tickets have been sent to the server.</string>
+    <string name="settings_sync_error">Unable to send the tickets to the server. Try again later.</string>
+    <string name="settings_log_out">Log out</string>
+    <string name="settings_success_duration">Number of seconds to show the green success message after scanning:</string>
+    <string name="settings_success_duration_hint">Seconds</string>
+    <string name="settings_success_duration_save">Save</string>
+    <string name="settings_sync_title">Offline tickets</string>
+    <string name="settings_success_duration_title">Success message</string>
+
+</resources>

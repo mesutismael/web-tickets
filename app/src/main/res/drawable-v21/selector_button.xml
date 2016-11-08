@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/general_button_background_pressed">
+
+    <item>
+
+        <shape
+            android:shape="rectangle">
+
+            <corners
+                android:radius="@dimen/general_button_corners"/>
+
+            <solid
+                android:color="@color/general_button_background"/>
+
+        </shape>
+
+    </item>
+
+</ripple>
